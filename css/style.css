@@ -9,7 +9,7 @@
         @apply font-manrope bg-background text-secondary1 relative;
     }
     nav {
-        @apply bg-[#323232e8] w-full fixed lg:py-5 lg:px-24 md:py-5 md:px-12 py-4 px-6 flex items-center justify-between z-50;
+        @apply bg-transparent w-full fixed lg:py-5 lg:px-24 md:py-5 md:px-12 py-4 px-6 flex items-center justify-between z-50 transition-all duration-300;
     }
 }
 
@@ -33,10 +33,10 @@
 
     /* Overlay Class */
     .overlay-menu {
-        @apply fixed -right-full top-0 z-[999] lg:hidden bg-background shadow-lg h-screen w-[250px] py-4 px-6 transition-all duration-300;
+        @apply fixed -right-full top-0 z-[999] lg:hidden bg-background shadow-lg h-screen w-[250px] py-5 px-6 transition-all duration-300;
     }
     .overlay-menu-flex {
-        @apply w-full flex flex-col text-end gap-14;
+        @apply w-full flex flex-col text-start gap-14;
     }
     .close {
         @apply w-6 h-6 cursor-pointer block self-end;
@@ -59,12 +59,12 @@
         @apply text-secondary2 text-lg font-medium leading-7 lg:text-start md:text-center text-center;
     }
     .hero-btn {
-        @apply bg-secondary3 py-4 px-12 text-center text-white mt-[40px];
+        @apply bg-secondary3 py-4 px-12 text-center text-white mt-[40px] flex items-center gap-2 justify-center;
     }
 
     /* Project Class */
     .project {
-        @apply w-full mx-auto lg:px-[96px] md:px-12 px-6 pb-[240px];
+        @apply w-full max-w-[1440px] mx-auto lg:px-[96px] md:px-12 px-6 pb-[240px];
     }
     .project-title {
         @apply text-center lg:text-4xl md:text-3xl text-[28px] font-bold leading-normal tracking-tighter mb-[66px];
@@ -72,8 +72,20 @@
     .project-flex {
         @apply flex flex-wrap justify-center items-center gap-6 w-full;
     }
+    .project-img-flex {
+        @apply flex md:flex-row flex-col md:gap-1 gap-3 items-center hover:scale-105 duration-300 transition-all;
+    }
     .project-img {
         @apply w-[500px] object-cover hover:brightness-50 transition-all duration-300 hover:scale-105;
+    }
+    .project-img-mobile {
+        @apply w-[100px];
+    }
+    .project-img-tab {
+        @apply w-[110px];
+    }
+    .project-img-laptop {
+        @apply w-[200px];
     }
 
     /* Contact Class */
