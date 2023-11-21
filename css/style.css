@@ -82,7 +82,7 @@
         @apply border-b-2 border-secondary2;
     }
     .aboutme-skills {
-        @apply flex flex-wrap items-center gap-2 w-full justify-center;
+        @apply flex flex-wrap items-center gap-4 w-full justify-center;
     }
 
     /* Project Class */
