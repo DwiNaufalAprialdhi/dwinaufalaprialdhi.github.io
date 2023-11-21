@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dwi Naufal Aprialdhi</title>
+    <!-- Tailwind CSS -->
     <link href="./css/global.css" rel="stylesheet" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="./css/aos.css" />
+    <!-- Icon -->
     <link rel="icon" type="image/x-icon" href="./assets/img/DNA.png" />
   </head>
   <body>
@@ -108,13 +112,20 @@
     <!-- Hero End -->
 
     <!-- Project Start -->
-    <section id="project" class="project">
+    <section
+      id="project"
+      class="project"
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
       <h2 class="project-title">Personal Projects</h2>
       <div class="project-flex">
         <a
           href="https://dwinaufalaprialdhi.github.io/wika-project/"
           target="_blank"
           class="project-img-flex"
+          data-aos="zoom-in"
+          data-aos-delay="100"
         >
           <img
             src="./assets/img/wika1.png"
@@ -136,6 +147,8 @@
           href="https://dwinaufalaprialdhi.github.io/spenty/"
           target="_blank"
           class="project-img-flex"
+          data-aos="zoom-in"
+          data-aos-delay="200"
         >
           <img
             src="./assets/img/spenty1.png"
@@ -157,6 +170,8 @@
           href="https://dwinaufalaprialdhi.github.io/dibuang/"
           target="_blank"
           class="project-img-flex"
+          data-aos="zoom-in"
+          data-aos-delay="300"
         >
           <img
             src="./assets/img/dibuang1.png"
@@ -178,6 +193,8 @@
           href="https://dwinaufalaprialdhi.github.io/awalkebaikan.com/"
           target="_blank"
           class="project-img-flex"
+          data-aos="zoom-in"
+          data-aos-delay="400"
         >
           <img
             src="./assets/img/awalkebaikan1.png"
@@ -200,7 +217,12 @@
     <!-- Project End -->
 
     <!-- Contact Start -->
-    <section id="contact" class="contact">
+    <section
+      id="contact"
+      class="contact"
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
       <h2 class="contact-title">Contact Me</h2>
       <p class="contact-desc">
         If you want to hire a Frontend Developer, I am currently available for
@@ -294,6 +316,14 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- JS -->
     <script src="./js/style.js"></script>
+    <!-- typeit JS -->
+    <script src="./js/index.umd.js"></script>
+    <!-- aos JS -->
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

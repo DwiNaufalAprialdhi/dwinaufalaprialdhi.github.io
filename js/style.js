@@ -1,4 +1,12 @@
 
+// Typeit JS
+document.addEventListener("DOMContentLoaded", function () {
+    new TypeIt(".hero-name", {
+        speed: 150,
+        loop:true,
+        loopDelay: 5000
+    }).go();
+  });
 
 // Toggle Nav
 const overlayMenu = document.querySelector('.overlay-menu')
