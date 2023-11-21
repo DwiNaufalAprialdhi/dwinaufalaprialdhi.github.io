@@ -712,7 +712,7 @@ nav{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 209px;
-  padding-bottom: 157px;
+  padding-bottom: 240px;
 }
 
 @media (min-width: 768px){
@@ -842,6 +842,115 @@ nav{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+/* About Me Class */
+
+.aboutme{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 100%;
+  max-width: 48rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 209px;
+  padding-bottom: 240px;
+}
+
+@media (min-width: 768px){
+  .aboutme{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .aboutme{
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+}
+
+.aboutme-title{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.05em;
+}
+
+@media (min-width: 768px){
+  .aboutme-title{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .aboutme-title{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.aboutme-desc{
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(149 149 149 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .aboutme-desc{
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px){
+  .aboutme-desc{
+    text-align: justify;
+  }
+}
+
+.aboutme-tab{
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.aboutme-tab-menu{
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.aboutme-tab-menu:hover{
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(149 149 149 / var(--tw-border-opacity));
+}
+
+.aboutme-tab-menu-active{
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(149 149 149 / var(--tw-border-opacity));
+}
+
+.aboutme-skills{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 /* Project Class */
 
 .project{
@@ -851,6 +960,7 @@ nav{
   max-width: 1440px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  padding-top: 209px;
   padding-bottom: 240px;
 }
 
@@ -946,6 +1056,7 @@ nav{
   gap: 1.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  padding-top: 209px;
   padding-bottom: 119px;
 }
 
@@ -1306,8 +1417,16 @@ nav{
   height: 1rem;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
 .w-4{
   width: 1rem;
+}
+
+.w-6{
+  width: 1.5rem;
 }
 
 .flex-shrink{

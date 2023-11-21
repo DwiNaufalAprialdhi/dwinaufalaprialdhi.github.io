@@ -44,7 +44,7 @@
 
     /* Hero Class */
     .hero {
-        @apply w-full lg:px-[96px] md:px-12 px-6 mx-auto pt-[209px] pb-[157px] grid grid-cols-12 items-center justify-center;
+        @apply w-full lg:px-[96px] md:px-12 px-6 mx-auto pt-[209px] pb-[240px] grid grid-cols-12 items-center justify-center;
     }
     .hero-avatar {
         @apply lg:w-[400px] lg:h-[400px] md:w-[300px] md:h-[300px] w-[240px] h-[240px] object-cover mx-auto lg:col-span-6 md:col-span-12 col-span-12 rounded-full block lg:mb-0 md:mb-[64px] mb-[64px] self-center;
@@ -62,9 +62,32 @@
         @apply bg-secondary3 py-4 px-12 text-center text-white mt-[40px] flex items-center gap-2 justify-center;
     }
 
+    /* About Me Class */
+    .aboutme {
+        @apply w-full max-w-3xl mx-auto lg:px-[96px] md:px-12 px-6 pt-[209px] pb-[240px] flex flex-col gap-6;
+    }
+    .aboutme-title {
+        @apply text-center lg:text-4xl md:text-3xl text-[28px] font-bold leading-normal tracking-tighter;
+    }
+    .aboutme-desc {
+        @apply text-secondary2 text-lg font-medium leading-7 lg:text-justify md:text-center text-center;
+    }
+    .aboutme-tab {
+        @apply flex items-center gap-4 cursor-pointer justify-center;
+    }
+    .aboutme-tab-menu {
+        @apply  text-sm font-bold leading-4 tracking-widest hover:border-b-2 hover:border-secondary2;
+    }
+    .aboutme-tab-menu-active {
+        @apply border-b-2 border-secondary2;
+    }
+    .aboutme-skills {
+        @apply flex flex-wrap items-center gap-2 w-full justify-center;
+    }
+
     /* Project Class */
     .project {
-        @apply w-full max-w-[1440px] mx-auto lg:px-[96px] md:px-12 px-6 pb-[240px];
+        @apply w-full max-w-[1440px] mx-auto lg:px-[96px] md:px-12 px-6 pt-[209px] pb-[240px];
     }
     .project-title {
         @apply text-center lg:text-4xl md:text-3xl text-[28px] font-bold leading-normal tracking-tighter mb-[66px];
@@ -90,7 +113,7 @@
 
     /* Contact Class */
     .contact {
-        @apply w-full pb-[119px] lg:px-24 md:px-12 px-6 mx-auto flex flex-col gap-6;
+        @apply w-full pt-[209px] pb-[119px] lg:px-24 md:px-12 px-6 mx-auto flex flex-col gap-6;
     }
     .contact-title {
         @apply text-center lg:text-4xl md:text-3xl text-[28px] font-bold leading-normal tracking-tighter;
